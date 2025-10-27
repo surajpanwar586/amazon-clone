@@ -1,0 +1,9 @@
+{
+  "info": {
+    "_postman_id": "a8a0d548-4b2d-4b2e-8b9a-2e3f7b3e1e1a",
+    "name": "Amazon Clone API",
+    "description": "This is a placeholder for the Amazon Clone API Postman collection. You can import this file into Postman and add your requests to it.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": []
+}

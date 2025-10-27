@@ -1,3 +1,7 @@
+[![CI](https://github.com/surajpanwar586/amazon-clone/actions/workflows/ci.yml/badge.svg)](https://github.com/surajpanwar586/amazon-clone/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js version](https://img.shields.io/badge/node.js-v20.x-green.svg)](https://nodejs.org/en/)
+
 # Amazon Clone - MERN
 
 ## Setup and Run

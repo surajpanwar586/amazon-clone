@@ -5,9 +5,23 @@
   "scripts": {
     "start:frontend": "cd frontend && npm start",
     "start:backend": "cd backend && npm start",
-    "install:all": "npm install && (cd frontend && npm install) && (cd backend && npm install)"
+    "install:all": "npm install && (cd frontend && npm install) && (cd backend && npm install)",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6"
+  },
+  "lint-staged": {
+    "**/*.{json,css}": [
+      "prettier --write"
+    ],
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
 }
