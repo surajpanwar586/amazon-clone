@@ -12,16 +12,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^9.38.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.6"
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2"
   },
   "lint-staged": {
-    "**/*.{json,css}": [
+    "**/*.{js,jsx,ts,tsx,json,css,md}": [
       "prettier --write"
     ],
-    "**/*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
+    "frontend/**/*.{js,jsx,ts,tsx}": [
+      "cd frontend && npx eslint --fix"
+    ],
+    "backend/**/*.{js,jsx}": [
+      "cd backend && ESLINT_USE_FLAT_CONFIG=false npx eslint --fix"
     ]
   }
 }
